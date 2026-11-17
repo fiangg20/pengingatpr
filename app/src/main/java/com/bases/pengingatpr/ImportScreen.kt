@@ -264,7 +264,7 @@ fun ImportScreen(nav: Nav) {
                         ExpButton(
                             "Gunakan jadwal ini",
                             {
-                                Repo.setTimetable(Timetable(chosen.title, fileName, mapped))
+                                Repo.replaceTimetable(Timetable(chosen.title, fileName, mapped))
                                 nav.pop()
                                 nav.toast("Jadwal ${chosen.title} disimpan")
                             },

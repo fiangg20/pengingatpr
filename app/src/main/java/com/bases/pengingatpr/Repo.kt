@@ -103,7 +103,7 @@ object Repo {
 
     // ---------- Jadwal ----------
 
-    fun setTimetable(tt: Timetable?) {
+    fun replaceTimetable(tt: Timetable?) {
         timetable = tt
         save()
     }
